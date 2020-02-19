@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1224.0" style="-fx-background-color: #424242;" stylesheets="@submenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.user.ProfileController">
+   <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="Profile" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+      <AnchorPane layoutX="-43.0" layoutY="605.0" prefHeight="87.0" prefWidth="1219.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="-43.0" AnchorPane.rightAnchor="43.0" />
+      <Pane layoutX="94.0" layoutY="117.0" prefHeight="409.0" prefWidth="403.0" style="-fx-background-color: white; -fx-border-color: #a100b7; -fx-background-radius: 5; -fx-border-width: 0 5 0 5,0 0; -fx-border-radius: 5;">
+         <children>
+            <Label layoutX="146.0" layoutY="14.0" prefHeight="27.0" prefWidth="110.0" text="MY PROFILE" textFill="#a100b7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="26.0" layoutY="56.0" prefWidth="350.0" />
+            <HBox layoutX="27.0" layoutY="96.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="141.0" text="Full Name" textFill="#7c7c7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" prefHeight="30.0" prefWidth="214.0" text="Sample Name" textFill="#282626" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="27.0" layoutY="180.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="141.0" text="Email" textFill="#7c7c7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" prefHeight="30.0" prefWidth="214.0" text="Sample Name" textFill="#282626" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="27.0" layoutY="256.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="141.0" text="Phone Number" textFill="#7c7c7c">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phone" prefHeight="30.0" prefWidth="214.0" text="Sample Name" textFill="#282626" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="710.0" layoutY="117.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <children>
+            <Pane prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #00C0EF; -fx-background-radius: 3;" />
+            <VBox layoutX="106.0" layoutY="17.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Previous Bookings" />
+                  <Label fx:id="count" prefHeight="27.0" prefWidth="106.0" style="-fx-font-size: 20; -fx-font-weight: BOLD;" text="0" />
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow height="29.9" radius="13.7075" width="26.93" />
+         </effect>
+      </Pane>
+      <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="1108.0" layoutY="10.0" onAction="#sync" prefHeight="36.0" prefWidth="92.0" style="-fx-background-color: #76FF03;" text="Sync">
+         <graphic>
+            <FontAwesomeIconView glyphName="REFRESH" size="20" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

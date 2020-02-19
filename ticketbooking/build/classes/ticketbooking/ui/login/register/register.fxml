@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="397.0" prefWidth="329.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.login.register.RegisterController">
+   <children>
+      <AnchorPane prefHeight="48.0" prefWidth="329.0" style="-fx-background-color: #212121;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="86.0" layoutY="14.0" text="New User Registration">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.10952380952380952">
+                     <stops>
+                        <Stop color="#14a1ff" />
+                        <Stop color="WHITE" offset="0.4803491724927913" />
+                        <Stop color="#05ff26" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutY="48.0" prefHeight="349.0" prefWidth="329.0" style="-fx-background-color: #F5F5F5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#0242ff" labelFloat="true" prefWidth="306.0" promptText="Username" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="fullname" focusColor="#f50b0b" labelFloat="true" promptText="Full Name">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="email" focusColor="#ffc300" labelFloat="true" promptText="Email ID">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="RED" labelFloat="true" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXTextField fx:id="phone" focusColor="#61d007" labelFloat="true" promptText="Contact Number">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="50.0" prefWidth="320.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="register" buttonType="RAISED" onAction="#RegisterUser" prefHeight="40.0" prefWidth="135.0" ripplerFill="#00ff11" style="-fx-background-color: #4CAF50; -fx-background-radius: 20;" text="REGISTER">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="back" buttonType="RAISED" onAction="#goBack" prefHeight="40.0" prefWidth="135.0" ripplerFill="#00ccff" style="-fx-background-color: #1565C0; -fx-background-radius: 200;" text="BACK" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

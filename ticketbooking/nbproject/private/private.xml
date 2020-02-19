@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/SettingsController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/TheatreController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/HomeController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/login/LoginController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/ShowController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/login/admin/AdminloginController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/alert/AlertMaker.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/MoviesController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/OrderHistoryController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/Settings.fxml</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/login/register/RegisterController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/Home.fxml</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/Home.fxml</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/ShowController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/UserdashController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/RegisterShow/RegisterShowController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/util/database/DatabaseHandler.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/resources/images/3dglasses2.png</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/Settings.fxml</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/HomeController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/submenu.css</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/Ticketbooking.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/ProfileController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/submenu.css</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/AdmindashController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/bookshow/BookShowController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/addmovie/AddMovieController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/addTheatre/AddTheatreController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/user/showmovie/ShowMovieController.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/models/Admin.java</file>
+            <file>file:/C:/Users/bose4/Documents/NetBeansProjects/ticketbooking/src/ticketbooking/ui/mainui/admin/SettingsController.java</file>
+        </group>
+    </open-files>
+</project-private>

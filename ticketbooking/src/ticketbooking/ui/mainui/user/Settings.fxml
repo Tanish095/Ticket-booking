@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1224.0" style="-fx-background-color: #424242;" stylesheets="@../user/submenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.user.SettingsController">
+   <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="Settings" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+      <AnchorPane layoutY="626.0" prefHeight="87.0" prefWidth="1219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="81.0" layoutY="101.0" text="Wanna Change Your Password ?">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#56e81c" />
+                  <Stop color="#1eb3e5" offset="0.2611683848797251" />
+                  <Stop color="#da1ee5" offset="0.7147766323024055" />
+                  <Stop color="#e33920" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXPasswordField fx:id="current_password" focusColor="RED" labelFloat="true" layoutX="135.0" layoutY="222.0" prefHeight="25.0" prefWidth="223.0" promptText="Enter Current Password" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="#ffe500" />
+      <JFXPasswordField fx:id="new_password" focusColor="#a100ff" labelFloat="true" layoutX="135.0" layoutY="314.0" prefHeight="25.0" prefWidth="223.0" promptText="Enter New Password" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="#00ffee" />
+      <JFXButton fx:id="btnu" buttonType="RAISED" layoutX="165.0" layoutY="451.0" onAction="#UpdatePassword" prefHeight="42.0" prefWidth="163.0" ripplerFill="#4d4c4c" style="-fx-background-color: #76FF03;" text="Update Password" />
+   </children>
+</AnchorPane>

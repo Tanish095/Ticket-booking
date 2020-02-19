@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1226.0" style="-fx-background-color: #424242;" stylesheets="@submenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.admin.TheatreController">
+   <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="Theatre" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+      <TableView fx:id="table" layoutY="71.0" prefHeight="555.0" prefWidth="1225.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="100.0" text="Theatre ID" />
+          <TableColumn fx:id="nameCol" minWidth="200.0" prefWidth="250.0" text="Theatre Name" />
+            <TableColumn fx:id="hallCol" minWidth="50.0" prefWidth="160.0" text="Hall" />
+            <TableColumn fx:id="addressCol" minWidth="300.0" prefWidth="400.0" text="Address" />
+            <TableColumn fx:id="platinumCol" minWidth="50.0" prefWidth="105.0" text="Platinum" />
+            <TableColumn fx:id="goldCol" minWidth="50.0" prefWidth="100.0" text="Gold" />
+            <TableColumn fx:id="silverCol" minWidth="50.0" prefWidth="110.0" text="Silver" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="648.0" prefHeight="88.0" prefWidth="1219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="1077.0" layoutY="17.0" onAction="#refreshTable" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #00C853;" text="REFRESH">
+               <graphic>
+                  <FontAwesomeIconView glyphName="REFRESH" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="but_theatre" buttonType="RAISED" layoutX="852.0" layoutY="17.0" onAction="#addTheatre" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #E040FB;" text="Add Theatre">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="but_remove" buttonType="RAISED" layoutX="612.0" layoutY="17.0" onAction="#removeTheatre" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #00B0FF;" text="Remove Theatre">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" size="20" />
+               </graphic>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

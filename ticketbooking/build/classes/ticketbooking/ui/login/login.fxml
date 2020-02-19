@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="646.0" style="-fx-background-color: #212121;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.login.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <FontAwesomeIconView glyphName="TRIPADVISOR" layoutX="14.0" layoutY="48.0" size="50">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#da0c0c" />
+                  <Stop color="#da0c0c" offset="0.07662835249042145" />
+                  <Stop color="#fbff09" offset="0.20993798633329383" />
+                  <Stop color="#5bda5f" offset="0.3371647509578542" />
+                  <Stop color="#0fe9f5ee" offset="0.46565548840699916" />
+                  <Stop color="#0051ffed" offset="0.5907097997393056" />
+                  <Stop color="#e800e0ed" offset="0.7044673539518901" />
+                  <Stop color="#e800e0ed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </FontAwesomeIconView>
+      <Label layoutX="91.0" layoutY="16.0" text="AURORA">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#406cff" />
+                  <Stop color="#406cff" offset="0.0987083777698779" />
+                  <Stop color="#f5200cf3" offset="0.21981277402535832" />
+                  <Stop color="#ffcc00" offset="0.3973219575779117" />
+                  <Stop color="#675cff" offset="0.5012442232492001" />
+                  <Stop color="#16d309" offset="0.8200813682505825" />
+                  <Stop color="#ff0101" offset="0.8575265631788914" />
+                  <Stop color="#ff0101" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutY="66.0" prefHeight="292.0" prefWidth="647.0" style="-fx-background-color: #673AB7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#15ff00" labelFloat="true" layoutX="81.0" layoutY="38.0" prefHeight="25.0" prefWidth="190.0" promptText="Username" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXPasswordField fx:id="password" focusColor="#ffdd00" labelFloat="true" layoutX="81.0" layoutY="134.0" prefHeight="25.0" prefWidth="190.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE" />
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="123.0" layoutY="216.0" onAction="#LoginMember" prefHeight="40.0" prefWidth="107.0" ripplerFill="#176108" style="-fx-background-color: #00C853;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="439.0" layoutY="28.0" text="Not A Member ?" textFill="#fcf7f7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="register" buttonType="RAISED" layoutX="437.0" layoutY="63.0" onAction="#RegisterMember" prefHeight="40.0" prefWidth="107.0" ripplerFill="#3001eb" style="-fx-background-color: #4DD0E1;" text="REGISTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="430.0" layoutY="183.0" text="Are you an Admin ?" textFill="#fcf7f7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signin" buttonType="RAISED" layoutX="437.0" layoutY="216.0" onAction="#SignInAdmin" prefHeight="40.0" prefWidth="107.0" ripplerFill="#176108" style="-fx-background-color: #FBC02D;" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="166.0" layoutY="369.0" text="MOVIE TICKET BOOKING SYSTEM | SOUMODIPTA BOSE &amp; ABHIJIT GHOSH" textFill="#dddddd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="560.0" layoutY="15.0" onAction="#ExittoSystem" prefHeight="30.0" prefWidth="64.0" ripplerFill="#790808" style="-fx-background-color: #ef5350;" text="EXIT" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

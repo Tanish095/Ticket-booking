@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ticket" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a99c98a7-bf20-4d49-aac6-09cf84b79c1b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="158"/>
+	<parameter name="orderid" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT orderid,username,date,time,seats,category,total,movie.name as moviename,theatre.name as theatrename,hall,address FROM [order],movie,theatre where [order].movieid=movie.id and [order].theatreid=theatre.id and orderid=$P{orderid}]]>
+	</queryString>
+	<field name="orderid" class="java.lang.Object"/>
+	<field name="username" class="java.lang.Object"/>
+	<field name="date" class="java.lang.Object"/>
+	<field name="time" class="java.lang.Object"/>
+	<field name="seats" class="java.lang.Object"/>
+	<field name="category" class="java.lang.Object"/>
+	<field name="total" class="java.lang.Object"/>
+	<field name="moviename" class="java.lang.Object"/>
+	<field name="theatrename" class="java.lang.Object"/>
+	<field name="hall" class="java.lang.Object"/>
+	<field name="address" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="38" forecolor="#FFFFFF" backcolor="#000000" uuid="f6b39ade-27b0-4281-8b8a-dd686869c2ef"/>
+				<textElement textAlignment="Center">
+					<font size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AURORA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="57" width="194" height="22" uuid="2296bcd0-1d4a-4007-a09f-7399e9ef4638"/>
+				<textElement textAlignment="Center">
+					<font size="15" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TICKET AND INVOICE]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="455" y="-20" width="100" height="20" uuid="816000e2-03d8-496d-93a1-c23c035cf4da"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="505" splitType="Stretch">
+			<textField pattern="h.mm a">
+				<reportElement x="338" y="-195" width="100" height="20" uuid="2c96f828-e06a-4c20-8750-55f05880af4c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="9" width="100" height="20" uuid="0f2edf5c-1579-4256-bb7e-27ecf65e0837"/>
+				<text><![CDATA[Order ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="9" width="122" height="20" uuid="8d6fdda6-a474-4464-9021-9aa67b2a200f"/>
+				<textFieldExpression><![CDATA[""+$F{orderid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="38" width="100" height="20" uuid="37c65027-4eec-49fd-a47b-30adf6b53a87"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="38" width="122" height="20" uuid="d5d656a1-c122-47a4-93ee-19439216acec"/>
+				<textFieldExpression><![CDATA[""+$F{username}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="78" width="100" height="20" uuid="19713680-8f55-4702-9b5e-a0cd6c78b891"/>
+				<text><![CDATA[Movie]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="78" width="122" height="20" uuid="65eaa7a2-85aa-4860-9637-d4d99259afcf"/>
+				<textFieldExpression><![CDATA[""+$F{moviename}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="116" width="100" height="20" uuid="64178843-27c1-4c4e-be01-dc84aa55d83b"/>
+				<text><![CDATA[Theatre]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="116" width="122" height="20" uuid="b7d48798-86f2-4aa1-9cc9-9efbaacee594"/>
+				<textFieldExpression><![CDATA[""+$F{theatrename}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="154" width="100" height="20" uuid="47fc3483-dbec-4d73-a6d4-3aa9331c3283"/>
+				<text><![CDATA[Hall]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="154" width="100" height="20" uuid="13f554c9-089f-4b96-b629-105eccbdcfaa"/>
+				<textFieldExpression><![CDATA[""+$F{hall}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="194" width="100" height="20" uuid="af10afa0-3da0-4112-8827-4bd412189749"/>
+				<text><![CDATA[Theatre Address]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="194" width="160" height="31" uuid="a2ae89b9-f5a8-45e5-a986-4d1c36fe2297"/>
+				<textFieldExpression><![CDATA[""+$F{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="363" width="100" height="20" uuid="54c991ea-a565-4373-983e-b95a5d5acf73"/>
+				<text><![CDATA[Number Of Tickets]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="363" width="100" height="20" uuid="5361de22-b77d-4169-b504-43339e68ad78"/>
+				<textFieldExpression><![CDATA[""+$F{seats}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="405" width="100" height="20" uuid="aacfbee1-8520-49c1-b1b4-b0ac62975338"/>
+				<text><![CDATA[Seat Category]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="405" width="100" height="20" uuid="c799689c-ecaa-47d8-9319-16c1d8d2a332"/>
+				<textFieldExpression><![CDATA[""+$F{category}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="459" width="100" height="20" uuid="c2375d0d-958f-4eb0-b9c3-596a204f9829"/>
+				<text><![CDATA[Total Price]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="459" width="100" height="20" uuid="4375f2d6-fc5f-46f2-b4ac-ebed87fc7247"/>
+				<textFieldExpression><![CDATA[""+$F{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="257" width="100" height="20" uuid="1ecf410b-f98e-48db-ae84-77bf65d7551f"/>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="257" width="100" height="20" uuid="3891f9df-aa85-4790-96cb-3ffc215f717e"/>
+				<textFieldExpression><![CDATA[""+$F{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="84" y="313" width="100" height="20" uuid="6852c122-d4f2-4c7a-9b26-a10ebe9d8be4"/>
+				<text><![CDATA[time]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="316" y="313" width="100" height="20" uuid="9c34e172-0e73-45c0-a74a-94c77de61381"/>
+				<textFieldExpression><![CDATA[""+$F{time}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="42" forecolor="#FFFFFF" backcolor="#000000" uuid="6897e1a4-7862-4f29-be4b-9ff283453b06"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Please Keep a copy of this ticket either in your smartphone or in print format ,at the time of entry into the hall.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

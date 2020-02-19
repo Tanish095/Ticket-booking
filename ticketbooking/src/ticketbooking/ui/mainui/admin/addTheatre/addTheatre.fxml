@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="383.0" style="-fx-background-color: #424242;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.admin.addTheatre.AddTheatreController">
+   <stylesheets>
+      <URL value="@../addmovie/addmovie.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="383.0" style="-fx-background-color: #FFEA00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="109.0" layoutY="17.0" text="ADD THEATRE DETAILS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="36.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/images/stage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="id" focusColor="#00caff" labelFloat="true" layoutX="84.0" layoutY="91.0" prefHeight="25.0" prefWidth="216.0" promptText="Theatre ID" unFocusColor="WHITE" />
+      <JFXTextField fx:id="name" focusColor="#ff3535" labelFloat="true" layoutX="84.0" layoutY="150.0" prefHeight="25.0" prefWidth="216.0" promptText="Theatre Name" unFocusColor="WHITE" />
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="46.0" layoutY="564.0" onAction="#SubmitDetails" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #6200EA;" text="SUBMIT" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="232.0" layoutY="564.0" onAction="#goBack" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: #00BCD4;" text="Back" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_RIGHT" size="20" />
+         </graphic></JFXButton>
+      <JFXTextArea fx:id="address" focusColor="#ffd900" labelFloat="true" layoutX="84.0" layoutY="203.0" prefHeight="55.0" prefWidth="216.0" promptText="Address" unFocusColor="WHITE" />
+      <JFXTextField fx:id="halls" focusColor="#13fa00" labelFloat="true" layoutX="84.0" layoutY="283.0" prefHeight="21.0" prefWidth="216.0" promptText="Hall" unFocusColor="WHITE" />
+      <JFXTextField fx:id="platinum" focusColor="#8300fa" labelFloat="true" layoutX="84.0" layoutY="378.0" prefHeight="21.0" prefWidth="216.0" promptText="Platinum" unFocusColor="WHITE" />
+      <JFXTextField fx:id="gold" focusColor="#ffd000" labelFloat="true" layoutX="84.0" layoutY="423.0" prefHeight="21.0" prefWidth="216.0" promptText="Gold" unFocusColor="WHITE" />
+      <JFXTextField fx:id="silver" focusColor="#8a8a8a" labelFloat="true" layoutX="84.0" layoutY="465.0" prefHeight="21.0" prefWidth="216.0" promptText="Silver" unFocusColor="WHITE" />
+      <Separator layoutX="57.0" layoutY="370.0" orientation="VERTICAL" prefHeight="130.0" />
+      <Label layoutX="63.0" layoutY="335.0" text="Price" textFill="WHITE" />
+   </children>
+</AnchorPane>

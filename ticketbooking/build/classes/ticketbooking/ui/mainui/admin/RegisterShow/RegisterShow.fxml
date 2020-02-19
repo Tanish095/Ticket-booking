@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="651.0" style="-fx-background-color: #424242;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.admin.RegisterShow.RegisterShowController">
+    <stylesheets>
+        <URL value="@registershow.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="651.0" style="-fx-background-color: #00B0FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="239.0" layoutY="13.0" text="Register a Show">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="23.97" radius="10.7425" />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="movieid" focusColor="RED" labelFloat="true" layoutX="405.0" layoutY="94.0" prefHeight="25.0" prefWidth="180.0" promptText="Movie ID" unFocusColor="WHITE" />
+      <JFXTextField fx:id="theatreid" focusColor="#07ff00" labelFloat="true" layoutX="71.0" layoutY="94.0" prefHeight="25.0" prefWidth="180.0" promptText="Theatre ID" unFocusColor="WHITE" />
+      <JFXTextArea fx:id="moviename" editable="false" focusColor="RED" labelFloat="true" layoutX="405.0" layoutY="225.0" prefHeight="41.0" prefWidth="180.0" promptText="Movie Name" unFocusColor="RED" />
+      <JFXButton fx:id="ms" buttonType="RAISED" layoutX="440.0" layoutY="156.0" onAction="#movieSearch" prefHeight="41.0" prefWidth="108.0" style="-fx-background-color: #FF4081;" text="Search" textFill="WHITE" />
+      <JFXButton fx:id="ts" buttonType="RAISED" layoutX="107.0" layoutY="156.0" onAction="#theatreSearch" prefHeight="41.0" prefWidth="108.0" style="-fx-background-color: #00E676;" text="Search" textFill="WHITE" />
+      <JFXTextArea fx:id="theatrename" editable="false" focusColor="#07ff00" labelFloat="true" layoutX="71.0" layoutY="225.0" prefHeight="41.0" prefWidth="180.0" promptText="Theatre Name" unFocusColor="#07ff00" />
+      <JFXDatePicker fx:id="start" defaultColor="#00f0ff" layoutX="77.0" layoutY="354.0" promptText="Start Date" />
+      <JFXDatePicker fx:id="end" defaultColor="RED" layoutX="76.0" layoutY="402.0" promptText="End Date" />
+      <JFXTimePicker fx:id="time" defaultColor="#59ff00" layoutX="76.0" layoutY="463.0" promptText="Show Time" />
+      <JFXButton fx:id="register" buttonType="RAISED" layoutX="92.0" layoutY="516.0" onAction="#RegisterShow" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #F4511E;" text="Register" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="YOUTUBE_PLAY" size="20" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="434.0" layoutY="516.0" onAction="#goBack" prefHeight="41.0" prefWidth="117.0" style="-fx-background-color: #1976D2;" text="Back" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" size="20" />
+         </graphic></JFXButton>
+      <Separator layoutX="377.0" layoutY="352.0" orientation="VERTICAL" prefHeight="150.0" />
+      <Label layoutX="377.0" layoutY="319.0" text="Seats In Each Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="platinum" focusColor="#b200ff" labelFloat="true" layoutX="430.0" layoutY="354.0" prefHeight="25.0" prefWidth="129.0" promptText="Platinum" text="20" unFocusColor="WHITE" />
+      <JFXTextField fx:id="gold" focusColor="#ffdc00" labelFloat="true" layoutX="430.0" layoutY="402.0" prefHeight="25.0" prefWidth="129.0" promptText="Gold" text="30" unFocusColor="WHITE" />
+      <JFXTextField fx:id="silver" focusColor="#b5b5b5" labelFloat="true" layoutX="430.0" layoutY="460.0" prefHeight="25.0" prefWidth="129.0" promptText="Silver" text="100" unFocusColor="WHITE" />
+      <JFXTextField fx:id="hall" editable="false" focusColor="#90ff00" labelFloat="true" layoutX="107.0" layoutY="294.0" prefHeight="25.0" prefWidth="108.0" promptText="Hall" unFocusColor="#1af8ab" />
+   </children>
+</AnchorPane>

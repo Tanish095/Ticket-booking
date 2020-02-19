@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.jfx-button{
+    -fx-background-radius: 20;
+    -fx-text-fill: black;
+}
+.jfx-text-field, .jfx-password-field, .jfx-text-area, .jfx-combobox {
+    -fx-text-fill:#ffffff;
+    -fx-prompt-text-fill: #ffffff;
+}
+.jfx-radio-button {
+    -fx-selected-color: yellow;
+    -fx-unselected-color: blue;
+}

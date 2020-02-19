@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1360.0" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.user.UserdashController">
+   <children>
+      <JFXToolbar layoutX="184.0" layoutY="14.0" prefHeight="40.0" prefWidth="1360.0" style="-fx-min-height: 42; -fx-background-color: #212121;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Label prefHeight="23.0" prefWidth="228.0" style="-fx-font-size: 20; -fx-text-fill: white; -fx-font-weight: bold;" text="AURORA" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIconView glyphName="TRIPADVISOR" size="40">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                           <stops>
+                              <Stop color="#da0c0c" />
+                              <Stop color="#da0c0c" offset="0.07662835249042145" />
+                              <Stop color="#fbff09" offset="0.20993798633329383" />
+                              <Stop color="#5bda5f" offset="0.3371647509578542" />
+                              <Stop color="#0fe9f5ee" offset="0.46565548840699916" />
+                              <Stop color="#0051ffed" offset="0.5907097997393056" />
+                              <Stop color="#e800e0ed" offset="0.7044673539518901" />
+                              <Stop color="#e800e0ed" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+               </graphic>
+            </Label>
+         </left>
+         <right>
+            <Pane prefHeight="40.0" prefWidth="295.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="userlabel" layoutX="42.0" layoutY="5.0" prefHeight="30.0" prefWidth="244.0" style="-fx-font-size: 15; -fx-text-fill: #E0E0E0; -fx-font-weight: bold;" text="USER ID" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="2.0" layoutY="31.0" size="30" />
+               </children>
+            </Pane>
+         </right>
+      </JFXToolbar>
+      <VBox layoutY="40.0" prefHeight="720.0" prefWidth="140.0" style="-fx-background-color: #212121;">
+         <children>
+            <Label prefHeight="60.0" prefWidth="140.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #BDBDBD; -fx-border-color: red; -fx-border-width: 0 0 2 0;" text="NAVIGATION" />
+            <JFXButton fx:id="home" onAction="#goToHome" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text=" Home" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="20" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="movies" layoutX="10.0" layoutY="67.0" onAction="#goToMovies" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text="Movies" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="FILM" size="20" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="history" layoutX="10.0" layoutY="109.0" onAction="#goToHistory" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text="History" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TASKS" size="20" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="about" layoutX="10.0" layoutY="151.0" onAction="#showAbout" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text=" About" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="HEART" size="20" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="profile" layoutX="10.0" layoutY="193.0" onAction="#showProfile" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text="Profile" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="settings" layoutX="10.0" layoutY="235.0" onAction="#showSettings" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text="Settings" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GEARS" size="20" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="logout" onAction="#goToLogin" prefHeight="42.0" prefWidth="139.0" ripplerFill="#4a4946" styleClass="nav-button" text="Logout" textFill="#e0e3e8">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="20" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="holderPane" layoutX="140.0" layoutY="42.0" prefHeight="713.0" prefWidth="1219.0" />
+   </children>
+</AnchorPane>

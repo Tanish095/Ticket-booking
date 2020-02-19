@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" style="-fx-background-color: #424242;" stylesheets="@submenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.admin.MoviesController">
+   <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="Movies" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+      <TableView fx:id="table" layoutY="71.0" prefHeight="555.0" prefWidth="1219.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="100.0" text="Movie ID" />
+          <TableColumn fx:id="nameCol" minWidth="200.0" prefWidth="81.99996948242188" text="Movie Name" />
+            <TableColumn fx:id="directorCol" minWidth="0.0" prefWidth="160.0" text="Director" />
+            <TableColumn fx:id="castCol" prefWidth="250.0" text="Cast" />
+            <TableColumn fx:id="detailsCol" minWidth="0.0" prefWidth="400.0" text="Details" />
+            <TableColumn fx:id="ratingCol" minWidth="0.0" prefWidth="108.0" text="Rating" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="626.0" prefHeight="87.0" prefWidth="1219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="1077.0" layoutY="17.0" onAction="#refreshTable" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #00C853;" text="REFRESH">
+               <graphic>
+                  <FontAwesomeIconView glyphName="REFRESH" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="but_movie" buttonType="RAISED" layoutX="852.0" layoutY="17.0" onAction="#AddMovie" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #2979FF;" text="Add Movie">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="but_remove" buttonType="RAISED" layoutX="569.0" layoutY="17.0" onAction="#removeMovie" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: f44336;" text="Remove Movie">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="mov" buttonType="RAISED" layoutX="303.0" layoutY="17.0" onAction="#movdetails" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #D500F9;" text="Movie Details">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EYE" size="20" />
+               </graphic>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

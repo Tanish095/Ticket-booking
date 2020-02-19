@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="735.0" style="-fx-background-color: #424242;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketbooking.ui.mainui.admin.addmovie.AddMovieController">
+    <stylesheets>
+        <URL value="@addmovie.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="735.0" style="-fx-background-color: #AA00FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="277.0" layoutY="14.0" text="Add Movie Details">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="202.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/images/3d-glasses.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="poster" fitHeight="290.0" fitWidth="200.0" layoutX="490.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/images/defaultmovie.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="getimg" buttonType="RAISED" layoutX="514.0" layoutY="380.0" onAction="#getposter" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #ff1744;" text="Get Image" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ANGELLIST" size="20" />
+         </graphic></JFXButton>
+      <JFXTextField fx:id="id" focusColor="#b26fff" labelFloat="true" layoutX="56.0" layoutY="80.0" prefHeight="25.0" prefWidth="216.0" promptText="Movie ID" unFocusColor="WHITE" />
+      <JFXTextField fx:id="name" focusColor="#ff3535" labelFloat="true" layoutX="56.0" layoutY="138.0" prefHeight="25.0" prefWidth="216.0" promptText="Movie Name" unFocusColor="WHITE" />
+      <JFXTextField fx:id="director" focusColor="#01f522" labelFloat="true" layoutX="56.0" layoutY="196.0" prefHeight="25.0" prefWidth="216.0" promptText="Director" unFocusColor="WHITE" />
+      <JFXTextField fx:id="cast" focusColor="#37b6ff" labelFloat="true" layoutX="56.0" layoutY="249.0" prefHeight="25.0" prefWidth="216.0" promptText="Cast" unFocusColor="WHITE" />
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="447.0" layoutY="504.0" onAction="#SubmitDetails" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #64DD17;" text="SUBMIT" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="609.0" layoutY="504.0" onAction="#goBack" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: #40C4FF;" text="Back" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" size="20" />
+         </graphic></JFXButton>
+      <JFXTextArea fx:id="details" focusColor="#ffd900" labelFloat="true" layoutX="56.0" layoutY="323.0" prefHeight="115.0" prefWidth="216.0" promptText="Movie Details" unFocusColor="WHITE" />
+      <JFXTextField fx:id="rating" focusColor="#00fabb" labelFloat="true" layoutX="56.0" layoutY="492.0" prefHeight="21.0" prefWidth="216.0" promptText="Rating" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

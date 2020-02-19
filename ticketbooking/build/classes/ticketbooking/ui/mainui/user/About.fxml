@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1224.0" style="-fx-background-color: #424242;" stylesheets="@submenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="About" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+      <AnchorPane layoutY="626.0" prefHeight="87.0" prefWidth="1219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane layoutX="96.0" layoutY="451.0" prefHeight="210.0" prefWidth="243.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-background-radius: 3; -fx-border-width: 0 0 0 3,0 0; -fx-border-radius: 3;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="CREATOR" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="47.0" text="SOUMODIPTA BOSE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="35.0" prefWidth="200.0" />
+            <Label layoutX="11.0" layoutY="76.0" text="Contact: bose4awesome@gmail.com" textFill="#7c7575">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="111.0" prefHeight="87.0" prefWidth="218.0" text="I couldn't have done this without some few notable Youtubers and resources from Oracle,Github,Maven and a lot of other stuff." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="903.0" layoutY="118.0" prefHeight="301.0" prefWidth="272.0" style="-fx-background-color: white; -fx-border-color: green; -fx-background-radius: 3; -fx-border-width: 0 0 0 3,0 0; -fx-border-radius: 3;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="RESOURCES USED" textFill="GREEN">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="35.0" prefWidth="240.0" />
+            <VBox layoutX="15.0" layoutY="52.0" prefHeight="249.0" prefWidth="240.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="JAVA FX" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="JFoenix" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Control FX" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Font Awesome FX" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Flat Icons" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="SQLite" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Material UI Colors" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Jasper Reports" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="96.0" layoutY="118.0" prefHeight="301.0" prefWidth="728.0" style="-fx-background-color: white; -fx-border-color: red; -fx-background-radius: 3; -fx-border-width: 0 0 0 3,0 0; -fx-border-radius: 3;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="DETAILS" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="35.0" prefWidth="700.0" />
+            <Label layoutX="14.0" layoutY="47.0" prefHeight="140.0" prefWidth="700.0" text="You need to first configure the Show details without which you cannot book a movie. It can be done using the Admin mode. Next you have to add the movie and the theatre and register their details together to create a show . You'll get the idea once you get there." textFill="#2c2828" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="224.0" text="Admin ID: root123 Password: password123" textFill="#282626">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="187.0" text="Use this as initial AdminID and Password" textFill="#757575">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="903.0" layoutY="451.0" prefHeight="210.0" prefWidth="272.0" style="-fx-background-color: white; -fx-border-color: purple; -fx-background-radius: 3; -fx-border-width: 0 0 0 3,0 0; -fx-border-radius: 3;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="NOTABLE YOUTUBERS" textFill="PURPLE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="35.0" prefWidth="240.0" />
+            <VBox layoutX="15.0" layoutY="52.0" prefHeight="78.0" prefWidth="240.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="GENUINE CODER" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Dan Mlayah" textFill="#1e1b1b" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="371.0" layoutY="451.0" prefHeight="210.0" prefWidth="452.0" style="-fx-background-color: white; -fx-border-color: #ff9800; -fx-background-radius: 3; -fx-border-width: 0 0 0 3,0 0; -fx-border-radius: 3;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="TICKET ISSUE" textFill="#ff9800">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="35.0" prefWidth="420.0" />
+            <Label layoutX="21.0" layoutY="50.0" prefHeight="64.0" prefWidth="420.0" text="1. If you have trouble generating the  ticket , then you would have to change the absolute path of the jasper Report File declared in DataBaseHandler Class in src/ticketbooking/util/database/" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="114.0" prefHeight="87.0" prefWidth="420.0" text="2. If error persists, then you dont have the requisite library dependencies for Jasper Reports .Please download them" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
